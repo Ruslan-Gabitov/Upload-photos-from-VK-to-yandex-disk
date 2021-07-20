@@ -53,7 +53,6 @@ class Vcontakte:
             return responce.json()['response']['object_id']
 
 
-
 class YaDisck:
     def __init__(self, token, url_downloadable_files):
         self.token = token
