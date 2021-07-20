@@ -99,8 +99,7 @@ if __name__ == "__main__":
     parser.add_argument('-c', '--count', help='Ввидите количество фото которые хотите сохранить(defoult = 5)')
     args = parser.parse_args()
 
-    project_folder = os.path.expanduser('~/Desktop/Projects/VK/App')
-    load_dotenv(os.path.join(project_folder, '.env'))
+    load_dotenv()
 
     vk = Vcontakte(token=os.getenv('VK_TOKEN'), count=args.count)
     ya_disck = YaDisck(
